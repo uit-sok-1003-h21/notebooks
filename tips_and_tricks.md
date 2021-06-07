@@ -5,3 +5,11 @@
      1. git add .
      1. git commit -m "text"
  4. push: git push
+ 
+ 5. Install spell check for Jupyter, in console:
+        pip install jupyter_contrib_nbextensions
+        jupyter contrib nbextension install --user
+        jupyter nbextension enable spellchecker/main
+        
+    To install Norwegian dictionary: https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/spellchecker/README.html#dictionaries
+    Replace "de_DE" with "no_NO", and download the dictionaries from the linked chromium site. Convert the files to "UTF-8", and change the encoding in the first line of the no_NO.aff file to "UTF-8"
