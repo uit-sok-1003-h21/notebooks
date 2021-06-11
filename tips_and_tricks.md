@@ -1,13 +1,25 @@
 # Tips and tricks:
- 1. clone this repository: git clone https://github.com/uit-sok-1003-h21/notebooks/
- 2. Start jupyter notebook in a custom directory (D:/myfiles here): 
-         jupyter notebook --notebook-dir=D:/myfiles
- 3. commit: 
-     1. git add .
-     1. git commit -m "text"
- 4. push: git push
+ 1. clone this repository: 
  
- 5. pull: git pull
+         git clone https://github.com/uit-sok-1003-h21/notebooks/
+     
+ 2. Start jupyter notebook in a custom directory (D:/myfiles here): 
+ 
+         jupyter notebook --notebook-dir=D:/myfiles
+         
+ 3. commit: 
+ 
+         git add .
+         git commit -m "text"
+     
+ 4. push: 
+         
+         git push
+ 
+ 5. pull: 
+     
+         git pull
+         
      a) If files have changed, and you want discard those changes:
          
          git reset --hard
@@ -18,6 +30,7 @@
          git stash
  
  5. Install spell check for Jupyter notebook, in console:
+ 
         pip install jupyter_contrib_nbextensions
         jupyter contrib nbextension install --user
         jupyter nbextension enable spellchecker/main
