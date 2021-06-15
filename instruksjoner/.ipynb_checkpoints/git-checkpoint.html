@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Terminal</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>git</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14259,155 +14259,112 @@ a.anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Terminal">Terminal<a class="anchor-link" href="#Terminal">&#182;</a></h1>
+<h1 id="Git:">Git:<a class="anchor-link" href="#Git:">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><img align="left" src="assets/new.png" style="padding:20px;" width=300>Ved hjelp av Terminal kan vi gi instruksjoner som ikke er tilgjengelig i JupyterLabs grafiske grensesnitt. Du åpner Terminal ved å trykke på + tegnet oppe til venstre (bilde til venstre)</p>
-<p><img align="right" src="assets/terminal-open.png" style="padding:20px;">Du velger så "Terminal" i "launcher"-fanen som dukker opp til høyre (bilde til høyre).</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Du får nå opp en svart skjerm med følgende tekst oppe til venstre</p>
-
-<pre><code>     [&lt;brukernavn&gt;@ad.uit.no@jupyt03 ~]$ 
-
-</code></pre>
-<p>... der <code>&lt;brukernavn&gt;</code> er ditt brukernavn. Tegnet <code>~</code> viser at du er i "rot-mappen". Det vil si den høyeste mappen i mappehierarkiet på ditt område.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Lage-en-ny-undermappe:">Lage en ny undermappe:<a class="anchor-link" href="#Lage-en-ny-undermappe:">&#182;</a></h2>
+<h2 id="Kopiere-repositoriet-notebooks-fra-kurssiden-&quot;uit-sok-1003-h21&quot;:">Kopiere repositoriet notebooks fra kurssiden "uit-sok-1003-h21":<a class="anchor-link" href="#Kopiere-repositoriet-notebooks-fra-kurssiden-&quot;uit-sok-1003-h21&quot;:">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
-<pre><code>    mkdir minmappe</code></pre>
+<pre><code>     git clone https://github.com/uit-sok-1003-h21/notebooks/</code></pre>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Der <code>minmappe</code> er navnet på mappen du lager</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="G&#229;-inn-i-undermappe:">G&#229; inn i undermappe:<a class="anchor-link" href="#G&#229;-inn-i-undermappe:">&#182;</a></h2>
+<h2 id="Hente-fra-repositorie">Hente fra repositorie<a class="anchor-link" href="#Hente-fra-repositorie">&#182;</a></h2>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 
-<pre><code>    cd minmappe</code></pre>
+<pre><code>     git pull</code></pre>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Du vil nå se at teksten foran innsetningspunktet skifter til</p>
+<h2 id="F&#248;r-pull,-dersom-filene-har-endret-seg-lokalt:">F&#248;r pull, dersom filene har endret seg lokalt:<a class="anchor-link" href="#F&#248;r-pull,-dersom-filene-har-endret-seg-lokalt:">&#182;</a></h2>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li><p>Om du vil overskrive de lokale filene (du mister alle lokale endringer!!):</p>
+
+<pre><code>   git reset --hard
+   git pull</code></pre>
+</li>
+<li><p>Dersom filene har endret seg lokalt, men du vil ta vare på endringene:</p>
+
+<pre><code>   git stash</code></pre>
+</li>
+</ul>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h1 id="Om-du-har-gjort-endringer-som-du-&#248;nsker-skal-dyttes-til-repositoriet">Om du har gjort endringer som du &#248;nsker skal dyttes til repositoriet<a class="anchor-link" href="#Om-du-har-gjort-endringer-som-du-&#248;nsker-skal-dyttes-til-repositoriet">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>commit og dytte repositorie:</p>
 
-<pre><code>     [&lt;brukernavn&gt;@ad.uit.no@jupyt03 minmappe]$ </code></pre>
+<pre><code>     git add .
+     git commit -m "text"
+     git push</code></pre>
 
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><code>~</code> har altså skiftet til <code>minmappe</code> fordi du nå er i mappen "minmappe".</p>
-
+<h1 id="Lage-et-nytt-repositorie">Lage et nytt repositorie<a class="anchor-link" href="#Lage-et-nytt-repositorie">&#182;</a></h1>
 </div>
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="G&#229;-opp-fra-undermappe">G&#229; opp fra undermappe<a class="anchor-link" href="#G&#229;-opp-fra-undermappe">&#182;</a></h2>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Du kan gå opp fra undermappen ved å skrive</p>
+<ol>
+<li>Lag en ny mappe med navnet på ditt repositorie, la oss kallet det minrepo her, og gå inn i mappen:
+ mkdir minrepo
+ cd minrepo</li>
+<li><p>Lag filene du vil i mappen. Du kan for eksempel lage en readme-fil slik:</p>
+
+<pre><code> echo "#Dette er et repositorie for kanonbra kode!" &gt;&gt; README.md</code></pre>
+</li>
+<li>Gå på <a href="https://github.com/">https://github.com/</a> og lag en bruker, om du ikke allerede har gjort det, klikk på "Repositories" øverst og så "New" og gi repoen navnet "minrepo"</li>
+<li><p>Skriv in følgende kommandoer i Terminal:</p>
+
+<pre><code> git init
+ git add .
+ git commit -m "first commit"
+ git branch -M main
+ git remote add origin https://github.com/espensirnes/minrepo.git
+ git push -u origin main</code></pre>
+</li>
+</ol>
+<p>Du kan nå sjekke at README.md og eventuelle andre lokale filer er lastet opp på <a href="https://github.com/">https://github.com/</a></p>
 
 </div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
 
-<pre><code>    cd ..</code></pre>
+     </div>
+</div>
+</div>
+</div>
 
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Teksten foran innsetningspunktet skifter da tilbake til symbolet for rotmappen:</p>
-
-<pre><code>    [&lt;brukernavn&gt;@ad.uit.no@jupyt03 ~]$</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Se-innhold">Se innhold<a class="anchor-link" href="#Se-innhold">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Du kan se innholdet av mappen du er i, ved å skrive</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>    dir</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Slette-undermappe">Slette undermappe<a class="anchor-link" href="#Slette-undermappe">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For å slette undermappen minmappe skriver du</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>    rmdir minmappe</code></pre>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Bruk aldri denne uten at du er sikker på hva du gjør. Mappen kan ikke gjenopprettes etter at den er slettet.</p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="Slette-undermappe-og-alle-filer-i-undermappen">Slette undermappe og alle filer i undermappen<a class="anchor-link" href="#Slette-undermappe-og-alle-filer-i-undermappen">&#182;</a></h1>
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-
-<pre><code>     rm -r &lt;navn på mappe&gt;</code></pre>
-
-</div>
 </div>
 </body>
 
