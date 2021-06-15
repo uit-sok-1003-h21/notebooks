@@ -25,7 +25,7 @@
          git reset --hard
          git pull
      
-     b) If you want stash the changes in a dirty working directory away
+     b) If files have changed, and you want discard those changes, but also stash the changes in a dirty working directory.
      
          git stash
  
