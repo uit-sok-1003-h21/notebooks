@@ -43,6 +43,6 @@
         jupyter_data_dir()
         
         The result will show the location of the data directory with the directory structure mentioned on the web-page above. 
-    3. Crate a folder `dictionaries`under `spellchecker` adn copy [./dictionaries/nb_NO.aff](nb_NO.aff) and [./dictionaries/nb_NO.dic](nb_NO.dic) from the `dictionaries` folder here to the newly created folder.
+    3. Crate a folder `dictionaries`under `spellchecker` adn copy [nb_NO.aff](./dictionaries/nb_NO.aff) and [nb_NO.dic](./dictionaries/nb_NO.dic) from the `dictionaries` folder here to the newly created folder.
     4. Copy the code from the wepage above to a notebook, replace de_DE with nb_NO, and run it.. 
         
