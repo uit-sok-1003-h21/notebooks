@@ -35,5 +35,14 @@
         jupyter contrib nbextension install --user
         jupyter nbextension enable spellchecker/main
         
-    To install Norwegian dictionary: https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/spellchecker/README.html#dictionaries
-    Replace "de_DE" with "no_NO", and download the dictionaries from the linked chromium site. Convert the files to "UTF-8", and change the encoding in the first line of the no_NO.aff file to "UTF-8"
+    To install Norwegian dictionary:
+    1. go to https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/spellchecker/README.html
+    2. run
+    
+        from jupyter_core.paths import jupyter_data_dir
+        jupyter_data_dir()
+        
+        The result will show the location of the data directory with the directory structure mentioned on the web-page above. 
+    3. Crate a folder `dictionaries`under `spellchecker` adn copy /dictionaries/nb_NO.aff and /dictionaries/nb_NO.dic to that folder.
+    4. Copy the code from the wepage above to a notebook, replace de_DE with nb_NO, and run it.. 
+        
