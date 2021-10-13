@@ -31,15 +31,15 @@
          
  6. Lage git-repositorie:
 
-     a) Lag en githubkonto (du trenger ikke bruke din uit-mail, det er valgfritt)
-     c) Logg på `jupyter.uit.no`, og åpne ny Terminal (+), og naviger dit du vil ha repositoriet på jupyter.
-     d) Konfigurer git med e-posten til kontoen og ditt brukernavn (bytt ut klammeparentesene med e-posten og brukernavnet til githubkontoen):
+     1. Lag en githubkonto (du trenger ikke bruke din uit-mail, det er valgfritt)
+     2. Logg på `jupyter.uit.no`, og åpne ny Terminal (+), og naviger dit du vil ha repositoriet på jupyter.
+     3. Konfigurer git med e-posten til kontoen og ditt brukernavn (bytt ut klammeparentesene med e-posten og brukernavnet til githubkontoen):
         ```git config --global user.email "<e-post>"
         git config --global user.name "<brukernavn>"```
-      e) Gå til **Repositories**, trykk **New**, gi repositoriet et navn og velg **Private** eller **Public**. 
-      f) Kopier html-lenken
-      g) Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.
-      h) kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet du fikk i g) og <sti> er det som står i adressen etter **github.com/**  når du trykker "html"-knappen i repositoriet ditt på github
+     4. Gå til **Repositories**, trykk **New**, gi repositoriet et navn og velg **Private** eller **Public**. 
+     5. Kopier html-lenken
+     6. Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.
+     7. kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet du fikk i g) og <sti> er det som står i adressen etter **github.com/**  når du trykker "html"-knappen i repositoriet ditt på github
  
       Du kan nå redigere repositoriet ditt
  
