@@ -1,6 +1,6 @@
 # Tips og triks:
 
-## 3. Navigere i mappestrukturen med *Terminal":
+## 3. Navigere i mappestrukturen med *Terminal*:
 
 1. Gå til jupyter.uit.no, trykk på "+" dersom "launcher"-fanen ikke er oppe, og trykk på "Terminal"
 2. For å navigere til en bestemt mappe:
