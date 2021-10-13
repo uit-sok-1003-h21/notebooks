@@ -1,22 +1,26 @@
 # Tips and tricks:
- 1. Klone dette repositoriet: 
+## 1. Klone dette repositoriet: 
  
          git clone https://github.com/uit-sok-1003-h21/notebooks/
      
- 2. Starte Jupyter i bestemt mappe (D:/myfiles here): 
+ 
+## 2. Starte Jupyter i bestemt mappe (D:/myfiles here): 
  
          jupyter notebook --notebook-dir=D:/myfiles
          
- 3. commit: 
+ 
+## 3. commit: 
  
          git add .
          git commit -m "text"
      
- 4. push: 
+ 
+## 4. push: 
          
          git push
  
- 5. pull: 
+ 
+## 5. pull: 
      
          git pull
          
@@ -29,7 +33,8 @@
      
          git stash
          
- 6. Lage git-repositorie:
+ 
+## 6. Lage git-repositorie:
 
      1. Lag en githubkonto (du trenger ikke bruke din uit-mail, det er valgfritt)
      2. Logg på `jupyter.uit.no`, og åpne ny Terminal (+), og naviger dit du vil ha repositoriet på jupyter.
@@ -45,7 +50,8 @@
  
       Du kan nå redigere repositoriet ditt
  
- 7. Dytte repositoriet til github:
+ 
+## 7. Dytte repositoriet til github:
     a) Naviger til repositoriemappen i Terminal
     b) Kjør i Terminal:
        ```
@@ -56,7 +62,8 @@
       
       
  
- 5. Installere stavekontroll for i lokal Jupyter notebook:
+ 
+## 8. Installere stavekontroll for i lokal Jupyter notebook:
  
         pip install jupyter_contrib_nbextensions
         jupyter contrib nbextension install --user
