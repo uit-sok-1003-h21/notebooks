@@ -30,6 +30,7 @@
          git stash
          
  6. Lage git-repositorie:
+
      a) Lag en githubkonto (du trenger ikke bruke din uit-mail, det er valgfritt)
      c) Logg på `jupyter.uit.no`, og åpne ny Terminal (+), og naviger dit du vil ha repositoriet på jupyter.
      d) Konfigurer git med e-posten til kontoen og ditt brukernavn (bytt ut klammeparentesene med e-posten og brukernavnet til githubkontoen):
