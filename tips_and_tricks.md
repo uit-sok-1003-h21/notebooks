@@ -1,9 +1,9 @@
 # Tips and tricks:
- 1. clone this repository: 
+ 1. Klone dette repositoriet: 
  
          git clone https://github.com/uit-sok-1003-h21/notebooks/
      
- 2. Start jupyter notebook in a custom directory (D:/myfiles here): 
+ 2. Starte Jupyter i bestemt mappe (D:/myfiles here): 
  
          jupyter notebook --notebook-dir=D:/myfiles
          
@@ -20,30 +20,53 @@
      
          git pull
          
-     a) If files have changed, and you want discard those changes:
+     a) Om filer er endret, og du ønsker å overskrive endringene:
          
          git reset --hard
          git pull
      
-     b) If files have changed, and you want discard those changes, but also stash the changes in a dirty working directory.
+     b) Om filer er endret, og du ønsker å overskrive endringene, men også ta vare på endringer.
      
          git stash
+         
+ 6. Lage git-repositorie:
+     a) Lag en githubkonto (du trenger ikke bruke din uit-mail, det er valgfritt)
+     c) Logg på `jupyter.uit.no`, og åpne ny Terminal (+), og naviger dit du vil ha repositoriet på jupyter.
+     d) Konfigurer git med e-posten til kontoen og ditt brukernavn (bytt ut klammeparentesene med e-posten og brukernavnet til githubkontoen):
+        ```git config --global user.email "<e-post>"
+        git config --global user.name "<brukernavn>"```
+      e) Gå til **Repositories**, trykk **New**, gi repositoriet et navn og velg **Private** eller **Public**. 
+      f) Kopier html-lenken
+      g) Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.
+      h) kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet du fikk i g) og <sti> er det som står i adressen etter **github.com/**  når du trykker "html"-knappen i repositoriet ditt på github
  
- 5. Install spell check for Jupyter notebook, in console:
+      Du kan nå redigere repositoriet ditt
+ 
+ 7. Dytte repositoriet til github:
+    a) Naviger til repositoriemappen i Terminal
+    b) Kjør i Terminal:```
+       git add .
+       git commit -m "New repository"
+       git push 
+        ```
+      
+      
+ 
+ 5. Installere stavekontroll for i lokal Jupyter notebook:
  
         pip install jupyter_contrib_nbextensions
         jupyter contrib nbextension install --user
         jupyter nbextension enable spellchecker/main
         
-    To install Norwegian dictionary:
-    1. go to https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/spellchecker/README.html
-    2. run
+    For å installere norsk stavekontroll:
+    1. gå til https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/spellchecker/README.html
+    2. kjør
     
         from jupyter_core.paths import jupyter_data_dir
         jupyter_data_dir()
         
-        The result will show the location of the data directory with the directory structure mentioned on the web-page above. 
-    3. Crate a folder `dictionaries`under `spellchecker` 
-    4. Copy [nb_NO.aff](./dictionaries/nb_NO.aff) and [nb_NO.dic](./dictionaries/nb_NO.dic) from the `/instructions/dictionaries` folder in this repository, to the folder you just created.
-    5. Copy the code from the wepage above to a notebook, replace de_DE with nb_NO, and run it.
+        Resultatet viser stien nenvnt i lenken over. 
+    3. Lag en mappe `dictionaries` under `spellchecker` i ovvenenvnte sti.
+    4. Kopier [nb_NO.aff](./dictionaries/nb_NO.aff) og [nb_NO.dic](./dictionaries/nb_NO.dic) fra `/instructions/dictionaries` mappen i dette repositoriet til mappen du nettopp laget.
+    5. Kopier koden fra nettsiden over til en notebook, bytt ut de_DE med nb_NO, og kjør det.
         
