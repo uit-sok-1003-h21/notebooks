@@ -47,7 +47,8 @@
  
  7. Dytte repositoriet til github:
     a) Naviger til repositoriemappen i Terminal
-    b) Kjør i Terminal:```
+    b) Kjør i Terminal:
+       ```
        git add .
        git commit -m "New repository"
        git push 
