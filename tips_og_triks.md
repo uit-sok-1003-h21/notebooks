@@ -1,4 +1,4 @@
-# Tips and tricks:
+# Tips og triks:
 
 ## 3. Navigere i mappestrukturen med *Terminal":
 
