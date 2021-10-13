@@ -45,9 +45,9 @@ git config --global user.email "<e-post>"
 git config --global user.name "<brukernavn>"
 ```
 4. Gå til **Repositories**, trykk **New**, gi repositoriet et navn og velg **Private** eller **Public**. 
-5. Kopier html-lenken
-6. Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.
-7. kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet du fikk i g) og <sti> er det som står i adressen etter **github.com/**  når du trykker "html"-knappen i repositoriet ditt på github
+5. Ha dette vindudet åpent, for du skal bruke html-lenken på siden som dukker opp.
+6. Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.  
+7. kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet er det du fikk i 6. og <sti> er det som kommer etter **github.com/**  i html-lenken nevnt i 5.
 
  Du kan nå redigere repositoriet ditt
  
