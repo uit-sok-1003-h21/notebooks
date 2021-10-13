@@ -45,7 +45,7 @@ git config --global user.email "<e-post>"
 git config --global user.name "<brukernavn>"
 ```
 4. Gå til **Repositories**, trykk **New**, gi repositoriet et navn og velg **Private** eller **Public**. 
-5. Hold denne fanen åpen, for du skal bruke html-lenken på denn siden.
+5. Hold denne fanen åpen, for du skal bruke html-lenken på denne siden.
 6. Sørg for at du har et token. Gå eventuelt til https://github.com/settings/tokens/new for å generere nytt token.  
 7. kjør `git clone https://<token>@github.com/<sti>` der <token> er tokenet er det du fikk i 6. og <sti> er det som kommer etter **github.com/**  i html-lenken nevnt i 5.
 
