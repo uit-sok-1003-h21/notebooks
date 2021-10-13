@@ -4,7 +4,7 @@
 git clone https://github.com/uit-sok-1003-h21/notebooks/
 ```    
  
-## 2. Starte Jupyter i bestemt mappe (D:/myfiles here): 
+## 2. Starte Jupyter i bestemt mappe ('D:/myfiles' i dette tilfellet): 
 ```
 jupyter notebook --notebook-dir=D:/myfiles
 ```        
