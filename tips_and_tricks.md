@@ -1,4 +1,19 @@
 # Tips and tricks:
+
+## 3. Navigere i mappestrukturen med *Terminal":
+
+1. Gå til jupyter.uit.no, trykk på "+" dersom "launcher"-fanen ikke er oppe, og trykk på "Terminal"
+2. For å navigere til en bestemt mappe:
+```
+cd <mappenavn>
+```
+    der du bytter ut <mappenavn> med mappen du vil navigere til
+    
+3. For å navigere opp ett nivå i mappestrukturen:
+```
+cd ..
+```
+
 ## 2. Klone dette repositoriet: 
 ```
 git clone https://github.com/uit-sok-1003-h21/notebooks/
@@ -53,7 +68,7 @@ git config --global user.name "<brukernavn>"
  
  
 ## 8. Dytte repositoriet til github:
-1. Naviger til repositoriemappen i Terminal
+1. Naviger til repositoriemappen i Terminal (se avsnitt 1.)
 2. Kjør i Terminal:
 ```
 git add .
