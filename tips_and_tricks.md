@@ -7,7 +7,7 @@
 ```
 cd <mappenavn>
 ```
-der du bytter ut <mappenavn> med mappen du vil navigere til
+der du bytter ut \<mappenavn\> med mappen du vil navigere til
     
 3. For å navigere opp ett nivå i mappestrukturen:
 ```
