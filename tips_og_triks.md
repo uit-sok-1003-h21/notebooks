@@ -77,7 +77,7 @@ git commit -m "New repository"
 git push 
 ```
 
-Dersom du får en rettighetsfeil kan du forsøke å legge inn, etter `git push`, nettadressen som beskrevet i pkt. 7 g) over. 
+Dersom du får en rettighetsfeil kan du forsøke å legge inn, etter `git push`, nettadressen som beskrevet i pkt. 7.7 over. 
       
       
  
