@@ -103,7 +103,7 @@ Resultatet viser stien nenvnt i lenken over.
 4. Kopier [nb_NO.aff](./dictionaries/nb_NO.aff) og [nb_NO.dic](./dictionaries/nb_NO.dic) fra `/instructions/dictionaries` mappen i dette repositoriet til mappen du nettopp laget.
 5. Kopier koden fra nettsiden over til en notebook, bytt ut de_DE med nb_NO, og kjør det.
         
-## 9. Fjerne en mappe og alt dets innhold (FARLIG!)
+## 10. Fjerne en mappe og alt dets innhold (FARLIG!)
 
 Dersom en mappe har innhold som er vanskelig å fjerne, slik som et git-repositorie, vil det ikke være mulig å slette mappen i utforskeren. Du må da kjøre en kommando i Terminal for å fjerne mappen. For å fjerne en mappe og alt innholdet, navigerer du til mappen over (se 3.), slik at om du kjører `dir` så ser du navnet på mappen (samme med eventelt andre filer og mapper). Du kjører så
 ```
