@@ -112,3 +112,5 @@ rm -r <navn på mappe du vil ha fjernet>
 Bytt ut ´<navn på mappe du vil ha fjernet>´ med mappen du vil slette. 
 
 MERK at dette sletter mappen FOR EVIG OG ALLTID! Den kan ikke gjenoprettes, så VÆR HELT SIKKER før du gjør dette. Du må være HELT sikker på hvor du er i mappestrukturen i terminal, slik at du ikke sletter noe uforvarende. 
+
+Når du har kjørt kommandoen, vil du få gjentatte spørsmål om du vil slette hver enkelt fil. Trykk `y` og Enter på hvert spørsmål. 
