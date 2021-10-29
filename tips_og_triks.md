@@ -105,7 +105,7 @@ Resultatet viser stien nenvnt i lenken over.
         
 ## 10. Fjerne en mappe og alt dets innhold (FARLIG!)
 
-Dersom en mappe har innhold som er vanskelig å fjerne, slik som et git-repositorie, vil det ikke være mulig å slette mappen i utforskeren. Du må da kjøre en kommando i Terminal for å fjerne mappen. For å fjerne en mappe og alt innholdet, navigerer du til mappen over (se 3.), slik at om du kjører `dir` så ser du navnet på mappen (samme med eventelt andre filer og mapper). Du kjører så
+Dersom en mappe har innhold som er vanskelig å fjerne, slik som et git-repositorie, kan det være du må da kjøre en kommando i Terminal for å fjerne mappen. Du må da kjøre en kommando i Terminal for å fjerne mappen. For å fjerne en mappe og alt innholdet, navigerer du til mappen over (se 3.), slik at om du kjører `dir` så ser du navnet på mappen (samme med eventelt andre filer og mapper). Du kjører så
 ```
 rm -r <navn på mappe du vil ha fjernet>
 ```
