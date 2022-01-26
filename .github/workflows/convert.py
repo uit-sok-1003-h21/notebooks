@@ -4,10 +4,10 @@ import os
 
 
 def main():
-	for file in os.listdir():
+	for file in os.listdir('../../'):
 		filename = os.fsdecode(file)
 		if filename.endswith(".ipynb"):
-			convert(filename)
+			convert('../../'+filename)
 
 
 
